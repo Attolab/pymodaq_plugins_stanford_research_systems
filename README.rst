@@ -33,6 +33,10 @@ Instruments
 
 Below is the list of instruments included in this plugin
 
+Actuators
+++++++++
+* **ChopperSR542**: Precision Optical Chopper SR542 using the srsinst.sr542 package provided by Stanford Research Systems.
+Most chopper settings are available in the parameter tree, and the chopper phase controlled by the move commands.
 
 
 Viewer0D
@@ -56,4 +60,4 @@ Installation instructions
 * PyMoDAQ version > 4.0.8
 * VISA backend if connected using GPIB
 * pymeasure version >= 0.14.0 needed (if not yet available install from its github repository)
-
+* For SR542 Chopper, the USB-to-serial driver might need to be installed so that the controller appears a COM port (available at https://ftdichip.com/drivers/vcp-drivers/)
